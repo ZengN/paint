@@ -1,0 +1,496 @@
+/*首页部分 首页部分 首页部分*/
+
+/*公共顶部导航栏*/
+.navbar-default li a:hover {
+	color: #fff !important;
+	background-color: #ED654B !important;
+}
+
+.my-navbar {
+	margin-top: 20px;
+	padding:20px 0;
+	transition: background 0s ease-in-out, padding 0s ease-in-out;
+	}
+	
+.my-navbar a{
+	font-size: 1.3em !important;
+	background:transparent !important;
+	color:#fff !important;
+	}
+	
+.my-navbar a:hover {
+	color:#ED654B !important;
+	background:transparent;outline:0;
+	}
+	
+.my-navbar a {
+	transition: color 0s ease-in-out;
+	}/*-webkit-transition ;-moz-transition*/
+	
+button.navbar-toggle {
+ 	background-color:#FBFBFB;
+ 	}/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/  
+ 	
+button.navbar-toggle > span.icon-bar {
+ 	background-color:#000;
+ 	}  
+ 	
+span.brand-logo {
+	display: block;
+	padding-top: 2rem;
+	font-size: 5rem;
+	font-weight: bold;
+}
+
+.navbar-brand .index-logo1 {
+	display: none;
+	width: 120px;
+	height: 80px;
+}
+
+.index-logo2 {
+	width: 85px;
+	height: 42px;
+}
+
+.nav a {
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.nav li {
+	margin-left: 15px;
+}
+
+/*公共联系方式部分*/
+.indicate {
+    text-align: center;
+    background-color: #ED654B;/*rgb:237 101 75*/
+    padding: 4em 0;
+}
+
+span.glyphicon.glyphicon-map-marker {
+    font-size: 2em;
+    border-radius: 60px;
+    border: 2px solid #fff !important;
+    padding: 1em;
+	color:#fff;
+}
+
+span.glyphicon.glyphicon-map-marker:hover {
+    border: 2px dotted #fff !important;
+}
+
+span.glyphicon.glyphicon-earphone {
+    font-size: 2em;
+    border-radius: 60px;
+    border: 2px solid #fff !important;
+    padding: 1em;
+    color:#fff;
+}
+
+span.glyphicon.glyphicon-earphone:hover {
+    border: 2px dotted #fff !important;
+}
+
+span.glyphicon.glyphicon-envelope {
+    font-size: 2em;
+    border-radius: 60px;
+    border: 2px solid #fff !important;
+    padding: 1em;
+    color:#fff;
+}
+
+span.glyphicon.glyphicon-envelope:hover {
+    border: 2px dotted #fff !important;
+}
+
+span.glyphicon.glyphicon-send {
+    font-size: 2em;
+    border-radius: 60px;
+    border: 2px solid #fff;
+    padding: 1em;
+	color:#fff;
+}
+
+span.glyphicon.glyphicon-send:hover {
+    border: 2px dotted #fff !important;;
+}
+
+.indicate-grid p {
+  	font-size: 1em;
+  	font-weight: bold;
+ 	color: #fff;
+  	margin-top: 2em;
+  	margin-bottom: 1em;
+}
+.indicate-grid p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*公共底部固定栏*/
+.index-footer {
+	width: 100%;
+	font-size: 1.1rem;
+	text-align: center;
+	line-height: 4rem;
+	color: #fff;
+	background: #222;
+}
+
+/*轮播图*/
+.carousel-inner .item img {
+	width: 100%;
+	height: 700px;
+}
+
+.banner-text {
+	margin: auto;
+	top: 35%; 
+	left: 0;	
+	bottom: 0;
+	right: 0;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.banner-text p {
+	padding: 0 2rem;
+}
+
+.banner-text .banner-title a{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.banner-text .banner-title a: hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.banner-text p a{
+	margin-top: 1.2rem;
+	font-size: 2rem;
+	background: #ED654B;
+	border: 1px solid #fff;
+}
+
+
+.banner-text p a:visited {
+	background: #ED654B;
+	border: 1px solid #fff;
+}
+
+.banner-text p a:hover {
+	background: #333;
+	border: 1px dotted #fff;
+}
+
+.banner-text p a:active {
+	background: #333;
+	border: 1px solid #fff;
+}
+
+#toBottom {
+	width: 50px;
+	height: 50px;
+	background: url(../images/to-bottom.png) no-repeat;
+	background-size: contain;
+}
+
+/*轮播图左右箭头控制*/
+.carousel-control {
+	font-size: 50px;
+}
+
+/*益盾寓意*/
+.index-main-text1 {
+	text-align: center;
+	background: #fff;
+}
+
+.index-main-text1 h1 {
+	font-weight: bold;
+	color: #ED654B;	
+}
+
+.index-main-text1 p {
+	padding: 30px;
+}
+
+
+/*六图部分*/
+.index-list1-bg {
+	padding: 20px 0;
+	width: 100%;
+	background: #ED654B;
+}
+
+.index-list1-title {
+	padding: 30px 0;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+
+.small-photo  a{
+	padding: 0;
+}
+
+.color-change {
+	left: 4%;
+	width: 92%;
+	height: 94%;
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
+	background: -o-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
+	background: -ms-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
+}
+
+.small-photo-text {
+	padding: 0 32px 0 32px;
+	font-size: 1.8rem;
+}
+
+.small-photo-text h3 {
+	font-weight: bold;
+	padding-top: 20px;
+}
+.small-photo-text p {
+	padding-bottom: 20px;
+}
+
+.small-photo-text a{
+	display: inline-block;
+	width: 140px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 1.8rem;
+	border: none;
+	-moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+	background: #ED654B;
+}
+
+.small-photo-text a:hover{
+	background: #D43F3A;	
+}
+
+/*抗菌新诉求*/
+.index-main-text2 {
+	color: #fff;
+	text-align: center;
+	background: url(../images/index-main-bg.jpg)no-repeat;
+	background-size: cover;
+}
+
+.index-main-text2 h1 {
+	font-weight: bold;
+}
+
+.index-main-text2 p {
+	padding: 30px;
+}
+
+.index-main-text2 em {
+	padding: 30px;
+	color: #ED654B;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+/*灭菌原理*/
+.index-list2 {
+	background: transparent;
+	border: none;
+}
+
+.index-list2-title {
+	margin-top: -10px;
+	color: #ED654B;
+	text-align: center;
+	font-weight: bold;
+}
+
+.index-list2-text {
+	padding: 0 5px;
+	margin-bottom: 40px;
+	text-indent: 3rem;
+}
+
+/*产品检测报告*/
+.project {
+    text-align: center;
+    padding: 4em 0;
+	background-color: #ED654B;
+}
+.project h3 {
+    font-size: 3em;
+    font-family: 'Ubuntu-Italic';
+    text-transform: capitalize;
+    color: #fff;
+}
+.item img {
+    width: 100%;
+}
+.gallery-cursual {
+    margin-top: 3em;
+}
+
+/*product部分 product部分 product部分*/
+
+/*头部banner*/
+.product-banner {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background: url(../images/banner1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.product-banner .product-banner-text h1{
+	top: 50%;	
+	color: #fff;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+
+/*分页导航栏*/
+.product-submenu {
+	line-height: 5rem;
+	text-align: left;
+}
+
+.product-submenu-title {
+	padding-top: 20px;
+	padding-left: 10px;
+	margin-bottom: 0;
+	color: #122372;
+	white-space: nowrap;
+	font-weight: bold;
+	line-height: 5rem;
+}
+
+.product-submenu ul {
+	margin-top: 0;
+}
+
+.product-submenu ul li {
+	padding: 0;
+	list-style: none;
+	border-bottom: 1px solid #dfe8ff;
+}
+
+.product-submenu ul li a {
+	display: block;
+	margin: 20px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	border-left: 2px solid #b3b3b3;
+}
+
+.product-submenu ul li a:link {
+	color: #000;
+}
+
+.product-submenu ul li a:visited {
+	color: #000;
+	
+}
+
+.product-submenu ul li a:hover {
+	color: #122372;
+	border-left: 2px solid #122372;
+}
+
+.product-submenu ul li a:active, .product-submenu ul li a:focus {
+	color: #ff0000;
+	border-left: 2px solid #ff0000;
+	background: url(../images/arrow-right1.png) no-repeat;
+	background-position: right;
+}
+
+.product-submenu-text1 {
+	margin: 0;
+	padding-bottom: 3px;
+	font-weight: bold;
+}
+
+.product-submenu-text2 {
+	margin-top: 0;
+	display: block;
+	color: #b3b3b3;
+	line-height: 1rem;
+}
+
+
+
+/*所在位置*/
+.product-position {
+	padding-top: 20px;
+	line-height: 5rem;
+	text-align: center;
+	border-bottom: 1px solid #dfe8ff;
+}
+
+.product-position .position-text {
+	color: #888;
+}
+
+.product-position .position-arrow {
+	font-size: 2rem;
+}
+
+/*主体内容头部*/
+.product-main-top {
+	text-align: center;
+	border-bottom: 1px solid #dfe8ff;
+}
+
+.product-main-top h1{
+	color: #122372;
+	font-weight: bold;
+	padding-bottom: 0;
+}
+
+.product-main-top h3{
+	margin: 0 auto;	
+	width: 200px;
+	color: #b3b3b3;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #122372;
+}
+
+/*产品列表*/
+.product-list {
+	margin: 18px 0 30px 0;
+	text-align: center;
+}
+
+.product-list-photo {
+	margin: auto;
+	width: 230px;
+	height: 230px;
+	border: 1px solid #dfe8ff;
+}
+
+.product-list img {
+	padding-top: 20px;
+	width: 230px;
+	height: 180px;
+}
+
+.product-list-title {
+	color: #ED654B;
+	font-weight: bold;
+}
+
+.product-list-link a{
+	color: red;
+}
