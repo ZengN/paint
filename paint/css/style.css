@@ -1,6 +1,14 @@
 /*首页部分 首页部分 首页部分*/
 
 /*公共顶部导航栏*/
+.navbar-default {
+	line-height: 60px !important;
+}
+
+.navbar-default a{
+	line-height: 60px !important;
+}
+
 .navbar-default li a:hover {
 	color: #fff !important;
 	background-color: #ED654B !important;
@@ -49,8 +57,13 @@ span.brand-logo {
 }
 
 .index-logo2 {
-	width: 85px;
-	height: 42px;
+	width: 125px;
+	height: 75px;
+}
+
+.index-logo3 {
+	width: 80px;
+	height: 60px;
 }
 
 .nav a {
@@ -306,12 +319,26 @@ span.glyphicon.glyphicon-send:hover {
 
 /*灭菌原理*/
 .index-list2 {
+	display: none;
+	border-bottom: 4px solid #ED654B;
+}
+
+.index-list2:last-of-type {
+	border: none;
+}
+
+.index-list2-content {
+	padding: 50px;
+}
+
+.index-list2-pic {
+	margin-top: 20px;
+	margin-bottom: 0;
 	background: transparent;
 	border: none;
 }
 
 .index-list2-title {
-	margin-top: -10px;
 	color: #ED654B;
 	text-align: center;
 	font-weight: bold;
@@ -325,6 +352,7 @@ span.glyphicon.glyphicon-send:hover {
 
 /*产品检测报告*/
 .project {
+	position: relative;
     text-align: center;
     padding: 4em 0;
 	background-color: #ED654B;
@@ -340,6 +368,32 @@ span.glyphicon.glyphicon-send:hover {
 }
 .gallery-cursual {
     margin-top: 3em;
+}
+
+.project-bigPic {	
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+	display: none;
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	background-color: #fff;
+	border: 1px solid #CCC;
+}
+
+.project-bigPic img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	height: auto;
 }
 
 /*product部分 product部分 product部分*/
@@ -473,17 +527,24 @@ span.glyphicon.glyphicon-send:hover {
 	text-align: center;
 }
 
+.product-list-box {
+	margin: 20px 0;
+	text-align: center;
+	box-shadow: 1px 2.5px 5px #888888;
+}
+
 .product-list-photo {
+	display: block;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	margin: auto;
-	width: 230px;
-	height: 230px;
 	border: 1px solid #dfe8ff;
 }
 
 .product-list img {
 	padding-top: 20px;
-	width: 230px;
-	height: 180px;
 }
 
 .product-list-title {
@@ -491,6 +552,6 @@ span.glyphicon.glyphicon-send:hover {
 	font-weight: bold;
 }
 
-.product-list-link a{
+.product-list-link a {
 	color: red;
 }

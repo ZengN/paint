@@ -42,26 +42,29 @@ $(function(){
     });//顶部固定导航栏-end
      
     //小屏幕时的导航栏
-    if ($(window).width() < 750) {
+    if ($(window).width() < 768) {
 				$("#index-navbar").removeClass("my-navbar");
             	$("#index-navbar").addClass("navbar-default");
             	$("#index-brand").removeClass("index-logo1");
 				$(".brand-logo").css("display", "none");
-            	$("#index-brand").addClass("index-logo2");
+            	$("#index-brand").addClass("index-logo2")
+            	$(".product-submenu").css("display", "none");
             }
 	$(window).resize(function (){
-		if ($(window).width() < 750) {
+		if ($(window).width() < 768) {
 				$("#index-navbar").removeClass("my-navbar");
             	$("#index-navbar").addClass("navbar-default");
             	$("#index-brand").removeClass("index-logo1");
 				$(".brand-logo").css("display", "none");
             	$("#index-brand").addClass("index-logo2");
+            	$(".product-submenu").css("display", "none");
             } else {
             	$("#index-navbar").removeClass("navbar-default");
             	$("#index-navbar").addClass("my-navbar");
             	$("#index-brand").removeClass("index-logo2");
             	$("#index-brand").addClass("index-logo1");
 				$(".brand-logo").css("display", "block");
+				$(".product-submenu").css("display", "block");
             }
         
         if ($(document).scrollTop() !== 0){
@@ -74,20 +77,17 @@ $(function(){
 	});//小屏幕时的导航栏-end
 	
 //	点击页面滑动
-	$("#btn-scroll").click(function(){
+	$(".btn-scroll").click(function(){
 		$("html,body").animate({
-			scrollTop : $(".index-main-text1").offset().top}, 1000);
+			scrollTop : $(".index-main-text1").offset().top - 60 + "px"}, 1000);
 	});
 //	点击页面滑动-end
 	
 //	视频
-	$('#demo1').videoUI({
-  	'autoHide':false,
-  	'volumeMedia': 1
-	});
+	videojs.options.flash.swf = "video-js.swf";
 //	视频-end
 	
-	//省略图鼠标事件触发
+//	省略图鼠标事件触发
 	var md = window.matchMedia("@media all and (max-width: 1024)");
 		if (!md.matches){
 			$(".small-photo").mouseover(function(){
@@ -100,8 +100,17 @@ $(function(){
 				$(this).children(".small-photo-text").stop(true,false).slideUp("fast", function(){
    				$(this).css("display", "none");
    				});
-			});//省略图鼠标事件触发-end
+			});
 		};
+//	省略图鼠标事件触发-end
+
+//	抗菌原理
+	$(window).scroll(function (){
+		if($(window).scrollTop() >= $(".index-main-text2").offset().top - 100){	
+					$(".index-list2").slideDown("slow");
+		};
+	});
+//	抗菌原理-end
 		
 //	产品检测报告
 	$("#owl-demo").owlCarousel({
@@ -110,6 +119,20 @@ $(function(){
 		autoPlay : true,
 		pagination : false,
 	});
+	
+	img = $("#owl-demo").find(".lazyOwl");
+	img.css("cursor" , "pointer");
+	img.click(function() {
+		$(".project-bigPic").fadeIn("fast");
+		var imgPath = $(this).attr("src");
+		$(".project-bigPic img").attr("src", imgPath);
+	});
+	
+	$(".project-bigPic").click(function() {
+		$(this).fadeOut("fast");
+	});
+	
+
 //	产品检测报告-end
 
 //  产品分页导航栏选中效果

@@ -7,7 +7,7 @@
 		<title>益盾</title>
 		<link rel="stylesheet" href="../css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="../css/video-default.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/video-js.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css"/>
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" type="text/css" media="screen and (orientation:portrait)" href="../css/screen.css"> 
@@ -21,7 +21,7 @@
 
 	<body>
 		<!-- 顶部导航栏 -->
-		<nav class="navbar navbar-fixed-top my-navbar">
+		<nav id="index-navbar" class="navbar navbar-fixed-top my-navbar">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="container">
 				<div class="navbar-header">
@@ -70,7 +70,7 @@
 						<div class="container">
 							<h1 class="banner-title"><a href="#">益盾涂料</a></h1>
 							<p>给您室内打造室内健康新环境,舒适之余并且更放心</p>
-							<p><a href="#" class="btn btn-primary" role="button">Contact Us</a></p>
+							<p><a href="#"  class="btn btn-primary btn-scroll role="button">Contact Us</a></p>
 						</div>
 					</div>
 				</div>
@@ -81,7 +81,7 @@
 						<div class="container">
 							<h1 class="banner-title"><a href="#">益盾涂料</a></h1>
 							<p>给您室内打造室内健康新环境,舒适之余并且更放心</p>
-							<p><a href="#" class="btn btn-primary" role="button">Contact Us</a></p>
+							<p><a href="#"  class="btn btn-primary btn-scroll" role="button">Contact Us</a></p>
 						</div>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
 						<div class="container">
 							<h1 class="banner-title"><a href="#">益盾涂料</a></h1>
 							<p>给您室内打造室内健康新环境,舒适之余并且更放心</p>
-							<p><a href="#" class="btn btn-primary" role="button">Contact Us</a></p>
+							<p><a href="#" class="btn btn-primary btn-scroll" role="button">Contact Us</a></p>
 						
 						</div>
 					</div>		
@@ -106,14 +106,15 @@
 			</a>
 		</div>
 		<!--轮播图end-->
+		
+		<!-- 视频 -->
+			<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" style="width: 100%;" poster="../images/video-first.png" data-setup="{}">
+  				<source  src="../pathvideo/益盾480P3.mp4" type='video/mp4' />
+			</video>
+		<!-- 视频end -->
 			
 		<!--益盾寓意  -->	
 		<div class="jumbotron index-main-text1">
-			<div class="videoUiWrapper thumbnail">
-			<video width="370" height="214" id="demo1">
-   			<source src="../pathvideo/益盾480P3.mp4" type="video/mp4" />	
- 			</video>
-		</div>
   		<h1>益盾寓意</h1>
   		<p>可以提供全方位的健康保护，无论居家办公环境或要求更为严苛的医疗场所都可以通过我们各项产品抵抗有害病菌侵略并繁衍，如同隐形盾牌般捍卫我们的健康生活环境。</p>
 		</div>
@@ -190,24 +191,35 @@
 		
 		<!-- 灭菌原理 -->
 		<div class="container">
-			<div class="row">
+			<div class="row index-list2">
 				<div class="col-sm-4 col-md-4 col-lg-4">
-					<a href="#" class="thumbnail index-list2"><img src="../images/list111.jpg" /></a>
-					<div class="caption">
+					<a href="#" class="thumbnail index-list2-pic"><img src="../images/list111.jpg" /></a>
+				</div>
+				<div class="col-sm-8 col-md-8 col-lg-8">	
+					<div class="caption index-list2-content">
 						<h3 class="index-list2-title">蜻蜓翅膀杀菌原理</h3>
 						<p class="index-list2-text">科学家发现蜻蜓的翅膀有很多杀菌效果。每只蜻蜓翅膀上有无数个直径为240纳米的硅 "纳米柱";当病菌接触翅膀表面时，细尖的"纳米柱"即将病菌的细胞壁刺穿，导致病菌无法繁殖而死亡，达到物理灭菌的功效。</p>
 					</div>
 				</div>
+			</div>	
+			<div class="row index-list2">
 				<div class="col-sm-4 col-md-4 col-lg-4">
-					<a href="#" class="thumbnail index-list2"><img src="../images/list222.png" /></a>
-					<div class="caption">
+					<a href="#" class="thumbnail index-list2-pic"><img src="../images/list222.png" /></a>
+				</div>
+				<div class="col-sm-8 col-md-8 col-lg-8">	
+					<div class="caption index-list2-content">
 						<h3 class="index-list2-title">物理吸附性灭菌原理</h3>
 						<p class="index-list2-text">利用物理异性相吸的"电位原理"，带正电的益盾纳米灭菌粒子能将带负电的病菌吸附过来从而刺穿病菌的细胞壁导致病菌无法代谢而死，达到灭菌效果。</p>
 					</div>
 				</div>
+			</div>
+			
+			<div class="row index-list2">
 				<div class="col-sm-4 col-md-4 col-lg-4">
-					<a href="#" class="thumbnail index-list2"><img src="../images/list333.jpg" /></a>
-					<div class="caption">
+					<a href="#" class="thumbnail index-list2-pic"><img src="../images/list333.jpg" /></a>
+				</div>
+				<div class="col-sm-8 col-md-8 col-lg-8">		
+					<div class="caption index-list2-content">
 						<h3 class="index-list2-title">"强力，持久" 灭菌功效</h3>
 						<p class="index-list2-text">目前的化学药物在灭菌过程中药效会很快的流失和导致病菌产生耐药性。例如:酒精灭菌时效短;抗生素易产生耐药性。所以普通的灭菌成分需多次使用亦无持久性。益盾纳米灭菌粒子不会在灭菌过程中流失，消灭病菌后依然存在，可以持续消灭其它病菌，以达到强力、持久的灭菌效果。</p>
 					</div>
@@ -222,6 +234,8 @@
 							<h3>产品检测报告</h3>
 						</div>
 					<div class="gallery-cursual">
+						
+				<div class="project-bigPic"><img src="" /></div>
 					
 				<div id="owl-demo" class="owl-carousel text-center">
 					<div class="item">
@@ -292,7 +306,7 @@
 		<!-- 底部end -->
 		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="../js/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="../js/jquery.video-ui.js"></script>
+		<script type="text/javascript" src="../js/video.min.js"></script>
 		<script type="text/javascript" src="../js/owl.carousel.js" ></script>
 		<script type="text/javascript" src="../js/index.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
