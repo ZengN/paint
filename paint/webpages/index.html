@@ -2,15 +2,22 @@
 <html lang="zh-CN">
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>益盾</title>
 		<link rel="stylesheet" href="../css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="../css/video-js.min.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/video-js.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css" />
 		<link rel="stylesheet" href="../css/style.css" />
-		<link rel="stylesheet" type="text/css" media="screen and (orientation:portrait)" href="../css/screen.css"> 
+		<link rel="stylesheet" type="text/css" href="../css/media-pc.css" 
+			media="screen" />
+		<link rel="stylesheet" type="text/css" href="../css/media-pad-big.css" 
+			media="screen and (orientation:portrait)" />
+		<link rel="stylesheet" type="text/css" href="../css/media-pad-small.css" 
+			media="screen and (orientation:portrait)" />
+		<link rel="stylesheet" type="text/css" href="../css/media-phone.css" 
+			media="screen and (orientation:portrait)" />
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -39,7 +46,7 @@
 							<a href="#">首页 </a>
 						</li>
 						<li>
-							<a href="#">产品中心</a>
+							<a href="product.html">产品中心</a>
 						</li>
 						<li>
 							<a href="#">最新资讯</a>
@@ -108,7 +115,7 @@
 		<!--轮播图end-->
 		
 		<!-- 视频 -->
-			<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" style="width: 100%;" poster="../images/video-first.png" data-setup="{}">
+			<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered my-video" controls preload="none" style="width: 100%;" poster="../images/video-first.png" data-setup="{}">
   				<source  src="../pathvideo/益盾480P3.mp4" type='video/mp4' />
 			</video>
 		<!-- 视频end -->
@@ -128,25 +135,28 @@
 				<div class="col-sm-4 col-md-4 col-lg-4 small-photo">
 					<a href="#" class="thumbnail"><img src="../images/list1.jpg" alt="关于我们"></a>
 					<div class="carousel-caption small-photo-text color-change">
-						<h3>哈哈哈</h3>
-						<p>Collect customer feedback and data. Use our e-scratch card to instantly incentivize consumers.</p>
+						<h3 class="small-photo-title">关于我们</h3>
+						<div class="small-photo-content">
 						<p><a href="#" class="btn btn-primary" role="button">Enter</a></p>
+						</div>	
 					</div>
 				</div>
 				<div class="col-sm-4 col-md-4 col-lg-4 small-photo">
 					<a href="#" class="thumbnail"><img src="../images/list2.jpg" alt="..."></a>
 					<div class="carousel-caption small-photo-text color-change">
-						<h3>哈哈哈</h3>
-						<p>Collect customer feedback and data. Use our e-scratch card to instantly incentivize consumers.</p>
+						<h3 class="small-photo-title">产品理念</h3>
+						<div class="small-photo-content">
 						<p><a href="#" class="btn btn-primary" role="button">Enter</a></p>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-4 col-md-4 col-lg-4 small-photo">
-					<a href="#" class="thumbnail"><img src="../images/list3.jpg" alt="..."></a>
+					<a href="product.html" class="thumbnail"><img src="../images/list3.jpg" alt="..."></a>
 					<div class="carousel-caption small-photo-text color-change">
-						<h3>哈哈哈</h3>
-						<p>Collect customer feedback and data. Use our e-scratch card to instantly incentivize consumers.</p>
-						<p><a href="#" class="btn btn-primary" role="button">Enter</a></p>
+						<h3 class="small-photo-title">产品中心</h3>
+						<div class="small-photo-content">
+						<p><a href="product.html" class="btn btn-primary" role="button">Enter</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -154,25 +164,28 @@
 				<div class="col-sm-4 col-md-4 col-lg-4 small-photo">
 					<a href="#" class="thumbnail"><img src="../images/list4.jpg" alt="..."></a>
 					<div class="carousel-caption small-photo-text color-change">
-						<h3>哈哈哈</h3>
-						<p>Collect customer feedback and data. Use our e-scratch card to instantly incentivize consumers.</p>
+						<h3 class="small-photo-title">最新资讯</h3>
+						<div class="small-photo-content">
 						<p><a href="#" class="btn btn-primary" role="button">Enter</a></p>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-4 col-md-4 col-lg-4 small-photo">
 					<a href="#" class="thumbnail"><img src="../images/list5.jpg" alt="..."></a>
 					<div class="carousel-caption small-photo-text color-change">
-						<h3>哈哈哈</h3>
-						<p>Collect customer feedback and data. Use our e-scratch card to instantly incentivize consumers.</p>
+						<h3 class="small-photo-title">工程案例</h3>
+						<div class="small-photo-content">
 						<p><a href="#" class="btn btn-primary" role="button">Enter</a></p>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-4 col-md-4 col-lg-4 small-photo">
 					<a href="#" class="thumbnail"><img src="../images/list6.jpg" alt="..."></a>
 					<div class="carousel-caption small-photo-text color-change">
-						<h3>哈哈哈</h3>
-						<p>Collect customer feedback and data. Use our e-scratch card to instantly incentivize consumers.</p>
+						<h3 class="small-photo-title">哈哈哈</h3>
+						<div class="small-photo-content">
 						<p><a href="#" class="btn btn-primary" role="button">Enter</a></p>
+						</div>
 					</div>
 				</div>
 			</div>

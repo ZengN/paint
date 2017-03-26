@@ -3,13 +3,13 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>产品中心</title>
 		<link rel="stylesheet" href="../css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/style.css" />
-		<link rel="stylesheet" type="text/css" media="screen and (orientation:portrait)" href="../css/screen.css">
+		<link rel="stylesheet" type="text/css" media="screen and (orientation:portrait)" href="../css/media-phone.css.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -24,7 +24,7 @@
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#" style="padding:0;margin-left:15px;"><img class="img-responsive index-logo2" src="../images/index-logo.png" alt="益盾" /></a>
+					<a class="navbar-brand" href="#" style="padding:0;margin-left:15px;"><img id="pages-brand2" class="img-responsive index-logo2" src="../images/index-logo.png" alt="益盾" /></a>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapsed">  
        				 	<span class="icon-bar"></span>
        					<span class="icon-bar"></span>
@@ -35,10 +35,10 @@
 				<div class="collapse navbar-collapse" id="nav-collapsed">
 					<ul class="nav navbar-nav navbar-right" style="margin-top:0;">
 						<li>
-							<a href="#">首页 </a>
+							<a href="index.html">首页 </a>
 						</li>
 						<li>
-							<a href="#">产品中心</a>
+							<a href="product.html">产品中心</a>
 						</li>
 						<li>
 							<a href="#">最新资讯</a>
@@ -69,17 +69,17 @@
 				<div class="col-sm-3 col-md-3 col-lg-3 product-submenu">
 						<ul>
 							<li><h3 class="product-submenu-title">益盾产品分类</h3></li>
-							<li><a href="#"><h4 class="product-submenu-text1">全部产品</h4><span class="product-submenu-text2">All Products</span></a></li>
+							<li><a href="product.html"><h4 class="product-submenu-text1">全部产品</h4><span class="product-submenu-text2">All Products</span></a></li>
 							<li><a href="#"><h4 class="product-submenu-text1">室内乳胶漆系列</h4><span class="product-submenu-text2">All Products</span></a></li>
 							<li><a href="#"><h4 class="product-submenu-text1">外墙涂料系列</h4><span class="product-submenu-text2">All Products</span></a></li>
 							<li><a href="#"><h4 class="product-submenu-text1">罩面漆系列</h4><span class="product-submenu-text2">All Products</span></a></li>
 						</ul>
 				</div>
 				<!--分页导航栏end -->
-				<div class="col-sm-8 col-md-8 col-lg-8">
+				<div class="col-sm-8 col-md-8 col-lg-8 product-list">
 					<!-- 所在位置 -->								
 						<div class="product-position">
-							<span class="position-text">所在位置 : </span><a href="#">首页</a> <span class="position-arrow">&rsaquo;</span> <a href="#">产品中心</a> <span class="position-arrow">&rsaquo;</span> <a href="#">室内乳胶漆系列</a>
+							<span class="position-text">所在位置 : </span><a href="#">首页</a> <span class="position-arrow">&rsaquo;</span> <a href="product.html">产品中心</a> <span class="position-arrow">&rsaquo;</span> <a href="#">室内乳胶漆系列</a>
 						</div>					
 					<!-- 所在位置end -->
 	
@@ -91,18 +91,20 @@
 					
 					<!-- 主体内容头部end -->
 					<div class="row">
-						<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="col-sm-4 col-md-4 col-lg-4 product-main-pic">
 							<a href="#" class="thumbnail"><img class="img-responsive" src="../images/e1.jpg" alt="..." /></a>
 						</div>
-						<div class="col-sm-8 col-md-8 col-lg-8">
+						<div class="col-sm-8 col-md-8 col-lg-8 product-main-information">
 								<p class="product-details-text">产品名称: <span class="product-details-content">益盾外墙封闭底漆</span></p>
 								<p class="product-details-text">编号: <span class="product-details-content"></span>YDZS-1</p>
 								<p class="product-details-text">规格: <span class="product-details-content">18L</span></p>
-							</div>
 						</div>
-						
 					</div>
-				</div>
+					<div class="row">
+						<h3 class="product-main-head">产品详情</h3>
+						<div class="product-main-content">儿童漆，创新融合立邦三大核心科技——净化甲醛+I级抗污+恒彩技术，不仅可以净化室内空气中的游离甲醛，且耐污渍性优于I级抗污标准，更能让墙面色彩持久缤纷靓丽，为您及孩子营造一个清新、洁净、缤纷的空间。 独有的立邦空气卫士技术，专利配方，使涂装后空气质量*通过严苛检测（A+标准*美国绿色卫士GREENGUARD金级认证），让您安心呼吸家的好空气。
+						</div>
+					</div>	
 				</div>
 			</div>		
 		</div>

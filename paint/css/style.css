@@ -1,12 +1,17 @@
+body,div,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,form,a,p,textarea,input,img {
+	font-family: "微软雅黑";
+}
+
 /*首页部分 首页部分 首页部分*/
 
 /*公共顶部导航栏*/
 .navbar-default {
-	line-height: 60px !important;
+	line-height: 50px !important;
 }
 
 .navbar-default a{
-	line-height: 60px !important;
+	line-height: 50px !important;
+	font-size: 1.3em !important;
 }
 
 .navbar-default li a:hover {
@@ -63,7 +68,7 @@ span.brand-logo {
 
 .index-logo3 {
 	width: 80px;
-	height: 60px;
+	height: 45px;
 }
 
 .nav a {
@@ -80,6 +85,7 @@ span.brand-logo {
 .indicate {
     text-align: center;
     background-color: #ED654B;/*rgb:237 101 75*/
+   	border-top: 1px solid #fff;
     padding: 4em 0;
 }
 
@@ -237,7 +243,7 @@ span.glyphicon.glyphicon-send:hover {
 
 /*六图部分*/
 .index-list1-bg {
-	padding: 20px 0;
+	padding: 1.43em 0;
 	width: 100%;
 	background: #ED654B;
 }
@@ -257,6 +263,7 @@ span.glyphicon.glyphicon-send:hover {
 	left: 4%;
 	width: 92%;
 	height: 94%;
+	transition: all 0.3s ease-in-out;
 	background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
 	background: -moz-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
 	background: -o-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
@@ -264,23 +271,31 @@ span.glyphicon.glyphicon-send:hover {
 }
 
 .small-photo-text {
-	padding: 0 32px 0 32px;
+	padding: 0 2.286em;
 	font-size: 1.8rem;
+	overflow: hidden;
 }
 
-.small-photo-text h3 {
+.small-photo-title {
 	font-weight: bold;
-	padding-top: 20px;
-}
-.small-photo-text p {
-	padding-bottom: 20px;
+	padding-top: 4em;
+	transition: all 0.3s ease-in-out;
 }
 
-.small-photo-text a{
+.small-photo-content {
+	margin-top: 12.86em;
+	transition: all 0.3s ease-in-out;
+}
+
+.small-photo-content p:nth-of-type(2){
+	margin-top: 1.43em;
+}
+
+.small-photo-content a{
 	display: inline-block;
-	width: 140px;
-	height: 50px;
-	line-height: 50px;
+	width: 8em;
+	height: 3em;
+	line-height: 3em;
 	font-weight: bold;
 	font-size: 1.8rem;
 	border: none;
@@ -290,8 +305,12 @@ span.glyphicon.glyphicon-send:hover {
 	background: #ED654B;
 }
 
-.small-photo-text a:hover{
-	background: #D43F3A;	
+.small-photo-content a:visited {
+	background: #ED654B;
+}
+
+.small-photo-content a:hover {
+	background: #D43F3A;
 }
 
 /*抗菌新诉求*/
@@ -394,6 +413,10 @@ span.glyphicon.glyphicon-send:hover {
 	margin: auto;
 	width: 100%;
 	height: auto;
+}
+
+#owl-demo {
+	background-color: #fff;
 }
 
 /*product部分 product部分 product部分*/
@@ -555,3 +578,23 @@ span.glyphicon.glyphicon-send:hover {
 .product-list-link a {
 	color: red;
 }
+
+
+
+/*产品详情部分 product-details*/
+
+/*产品信息*/
+.product-main-pic {
+	padding-left: 40px;
+}
+
+.product-main-information, .product-main-head, .product-main-content{
+	padding-left: 40px;
+	text-align: left;
+}
+
+.product-main-information {
+	padding-top: 20px;
+}
+
+

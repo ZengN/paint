@@ -31,11 +31,11 @@ $(function(){
             	$("#index-navbar").addClass("navbar-default");
             	$("#index-brand").removeClass("index-logo1");
 				$(".brand-logo").css("display", "none");
-            	$("#index-brand").addClass("index-logo2");
+            	$("#index-brand").addClass("index-logo3");
          	}	else {
             		$("#index-navbar").removeClass("navbar-default");
             		$("#index-navbar").addClass("my-navbar");
-            		$("#index-brand").removeClass("index-logo2");
+            		$("#index-brand").removeClass("index-logo3");
             		$("#index-brand").addClass("index-logo1");
 					$(".brand-logo").css("display", "block");
            	} 
@@ -47,8 +47,10 @@ $(function(){
             	$("#index-navbar").addClass("navbar-default");
             	$("#index-brand").removeClass("index-logo1");
 				$(".brand-logo").css("display", "none");
-            	$("#index-brand").addClass("index-logo2")
+            	$("#index-brand").addClass("index-logo3")
             	$(".product-submenu").css("display", "none");
+            	$("#pages-brand2").removeClass("index-logo2");
+            	$("#pages-brand2").addClass("index-logo3");
             }
 	$(window).resize(function (){
 		if ($(window).width() < 768) {
@@ -56,15 +58,19 @@ $(function(){
             	$("#index-navbar").addClass("navbar-default");
             	$("#index-brand").removeClass("index-logo1");
 				$(".brand-logo").css("display", "none");
-            	$("#index-brand").addClass("index-logo2");
+            	$("#index-brand").addClass("index-logo3");
             	$(".product-submenu").css("display", "none");
+            	$("#pages-brand2").removeClass("index-logo2");
+            	$("#pages-brand2").addClass("index-logo3");
             } else {
             	$("#index-navbar").removeClass("navbar-default");
             	$("#index-navbar").addClass("my-navbar");
-            	$("#index-brand").removeClass("index-logo2");
+            	$("#index-brand").removeClass("index-logo3");
             	$("#index-brand").addClass("index-logo1");
 				$(".brand-logo").css("display", "block");
 				$(".product-submenu").css("display", "block");
+				$("#pages-brand2").removeClass("index-logo3");
+            	$("#pages-brand2").addClass("index-logo2");
             }
         
         if ($(document).scrollTop() !== 0){
@@ -86,23 +92,7 @@ $(function(){
 //	视频
 	videojs.options.flash.swf = "video-js.swf";
 //	视频-end
-	
-//	省略图鼠标事件触发
-	var md = window.matchMedia("@media all and (max-width: 1024)");
-		if (!md.matches){
-			$(".small-photo").mouseover(function(){
-				$(this).children(".small-photo-text").stop(true,false).slideDown("fast", function(){
-   				$(this).css("display", "block");
-   				});
-			});
-	
-			$(".small-photo").mouseout(function(){
-				$(this).children(".small-photo-text").stop(true,false).slideUp("fast", function(){
-   				$(this).css("display", "none");
-   				});
-			});
-		};
-//	省略图鼠标事件触发-end
+
 
 //	抗菌原理
 	$(window).scroll(function (){
