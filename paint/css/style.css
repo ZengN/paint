@@ -227,17 +227,22 @@ span.glyphicon.glyphicon-send:hover {
 
 /*益盾寓意*/
 .index-main-text1 {
+	margin: 0;
+	line-height: 200%;
 	text-align: center;
-	background: #fff;
+	background: url(../images/hb1.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .index-main-text1 h1 {
 	font-weight: bold;
-	color: #ED654B;	
+	color: #fff;	
 }
 
 .index-main-text1 p {
-	padding: 30px;
+	color: #F9F9F9;
+	margin: 30px;
 }
 
 
@@ -245,12 +250,12 @@ span.glyphicon.glyphicon-send:hover {
 .index-list1-bg {
 	padding: 1.43em 0;
 	width: 100%;
-	background: #ED654B;
+	background: #F9F2F4;
 }
 
 .index-list1-title {
 	padding: 30px 0;
-	color: #fff;
+	color: #ED654B;
 	font-weight: bold;
 	text-align: center;
 }
