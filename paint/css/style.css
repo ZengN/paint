@@ -2,6 +2,7 @@ body,div,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,form,a,p,textarea,input,img {
 	font-family: "微软雅黑";
 }
 
+
 /*首页部分 首页部分 首页部分*/
 
 /*公共顶部导航栏*/
@@ -253,70 +254,46 @@ span.glyphicon.glyphicon-send:hover {
 	background: #F9F2F4;
 }
 
+.xs-1 {
+	padding-bottom: 15px;
+}
+
+.xs-2 {
+	padding-top: 15px;
+}
+
 .index-list1-title {
 	padding: 30px 0;
 	color: #ED654B;
 	font-weight: bold;
-	text-align: center;
 }
 
-.small-photo  a{
-	padding: 0;
-}
-
-.color-change {
-	left: 4%;
-	width: 92%;
-	height: 94%;
-	transition: all 0.3s ease-in-out;
-	background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
-	background: -moz-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
-	background: -o-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
-	background: -ms-linear-gradient(bottom, rgba(0,0,0,1) 20%,rgba(255,255,255,0.2) 100%);
+.index-small-photo {
+	position: relative;
+	display: inline-block;
 }
 
 .small-photo-text {
-	padding: 0 2.286em;
-	font-size: 1.8rem;
-	overflow: hidden;
+	position: absolute;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
 }
 
 .small-photo-title {
-	font-weight: bold;
-	padding-top: 4em;
-	transition: all 0.3s ease-in-out;
-}
-
-.small-photo-content {
-	margin-top: 12.86em;
-	transition: all 0.3s ease-in-out;
-}
-
-.small-photo-content p:nth-of-type(2){
-	margin-top: 1.43em;
-}
-
-.small-photo-content a{
 	display: inline-block;
-	width: 8em;
-	height: 3em;
-	line-height: 3em;
+	margin: 0 auto;
+	text-align: center;
 	font-weight: bold;
-	font-size: 1.8rem;
-	border: none;
-	-moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-	background: #ED654B;
+	color: #fff;
+	background: rgba(0,0,0,0.36);
 }
 
-.small-photo-content a:visited {
-	background: #ED654B;
-}
 
-.small-photo-content a:hover {
-	background: #D43F3A;
-}
+
+
 
 /*抗菌新诉求*/
 .index-main-text2 {
