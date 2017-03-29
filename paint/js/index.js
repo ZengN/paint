@@ -89,11 +89,7 @@ $(function(){
 	});
 //	点击页面滑动-end
 	
-//	视频
-//	videojs.options.flash.swf = "video-js.swf";
-//	视频-end
-
-
+	
 //  益盾寓意背景图
 	$(window).scroll(function() {
 		$(".index-main-text1").css("background-position-y", -$(window).scrollTop());
