@@ -3,28 +3,75 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>产品中心</title>
 		<link rel="stylesheet" href="../css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/style.css" />
-		<link rel="stylesheet" type="text/css" media="screen and (orientation:portrait)" href="../css/media-phone.css.css">
+		<link rel="stylesheet" type="text/css" media="screen and (orientation:portrait)" href="../css/screen.css">
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="../js/fy.js"></script>
+		<script type="text/javascript" src="../js/jquery.imagezoom.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
       	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
      	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     	<![endif]-->
+    	<script type="text/javascript">
+			
+			$(document).ready(function(){
+				
+				$(".jqzoom").imagezoom();
+				$("#thumblist li a").click(function(){
+					//增加点击的li的class:tb-selected，去掉其他的tb-selecte
+					$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+					//赋值属性
+					$(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+					$(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+					
+				});
+			});
+		</script>
+		<style type="text/css">
+			html{overflow-y:scroll;}
+			body{margin:0; font:12px "\5B8B\4F53",san-serif;background:#ffffff;}
+			li{list-style:none;}
+			img{vertical-align:top;border:0;}
+			
+			/* box */
+			.box{width:610px;margin:0 0 10px 0;}
+			.tb-pic a{display:table-cell;text-align:center;vertical-align:middle;}
+			.tb-pic a img{vertical-align:middle;}
+			.tb-pic a{*display:block;*font-family:Arial;*line-height:1;}
+			.tb-thumb{margin:10px 0 0;overflow:hidden;}
+			.tb-thumb li{background:none repeat scroll 0 0 transparent;float:left;height:42px;margin:0 6px 0 0;overflow:hidden;padding:1px;}
+			.tb-s310, .tb-s310 a{height:310px;width:310px;}
+			.tb-s310, .tb-s310 img{max-height:310px;max-width:310px;}
+			.tb-s310 a{*font-size:271px;}
+			.tb-s40 a{*font-size:35px;}
+			.tb-s40, .tb-s40 a{height:40px;width:40px;}
+			.tb-booth{border:1px solid #CDCDCD;position:relative;z-index:1;}
+			.tb-thumb .tb-selected{background:none repeat scroll 0 0 #C30008;height:40px;padding:2px;}
+			.tb-thumb .tb-selected div{background-color:#FFFFFF;border:medium none;}
+			.tb-thumb li div{border:1px solid #CDCDCD;}
+			.zoomDiv{z-index:999;position:absolute;top:0px;left:0px;width:200px;height:200px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+			.zoomMask{position:absolute;background:url("images/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
+		</style>
+
+
 	</head>
 
 	<body>
 		<!-- 顶部导航栏 -->
-		<nav class="navbar navbar-fixed-top navbar-default">
+		<nav id="index-navbar" class="navbar navbar-fixed-top navbar-default">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#" style="padding:0;margin-left:15px;"><img id="pages-brand2" class="img-responsive index-logo2" src="../images/index-logo.png" alt="益盾" /></a>
+					<a class="navbar-brand" href="#" style="padding:0;margin-left:15px;"><img class="img-responsive index-logo2" src="../images/index-logo.png" alt="益盾" /></a>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapsed">  
        				 	<span class="icon-bar"></span>
        					<span class="icon-bar"></span>
@@ -41,10 +88,10 @@
 							<a href="product.html">产品中心</a>
 						</li>
 						<li>
-							<a href="#">最新资讯</a>
+							<a href="case.html">工程案例</a>
 						</li>
 						<li>
-							<a href="#">工程案例</a>
+							<a href="about.html">关于我们</a>
 						</li>
 					</ul>
 				</div>
@@ -61,53 +108,115 @@
 			</div>
 		</div>
 		<!-- 头部图片end -->
-			
+
 		<!-- 产品介绍 -->
 		<div class="container">
 			<div class="row">
 				<!--分页导航栏 -->
 				<div class="col-sm-3 col-md-3 col-lg-3 product-submenu">
-						<ul>
-							<li><h3 class="product-submenu-title">益盾产品分类</h3></li>
-							<li><a href="product.html"><h4 class="product-submenu-text1">全部产品</h4><span class="product-submenu-text2">All Products</span></a></li>
-							<li><a href="#"><h4 class="product-submenu-text1">室内乳胶漆系列</h4><span class="product-submenu-text2">All Products</span></a></li>
-							<li><a href="#"><h4 class="product-submenu-text1">外墙涂料系列</h4><span class="product-submenu-text2">All Products</span></a></li>
-							<li><a href="#"><h4 class="product-submenu-text1">罩面漆系列</h4><span class="product-submenu-text2">All Products</span></a></li>
-						</ul>
+					<ul>
+						<li>
+							<h3 class="product-submenu-title">益盾产品分类</h3></li>
+						<li>
+							<a href="#">
+								<h4 class="product-submenu-text1">全部产品</h4><span class="product-submenu-text2">All Products</span></a>
+						</li>
+						<li>
+							<a href="#">
+								<h4 class="product-submenu-text1">室内乳胶漆系列</h4><span class="product-submenu-text2">All Products</span></a>
+						</li>
+						<li>
+							<a href="#">
+								<h4 class="product-submenu-text1">外墙涂料系列</h4><span class="product-submenu-text2">All Products</span></a>
+						</li>
+						<li>
+							<a href="#">
+								<h4 class="product-submenu-text1">罩面漆系列</h4><span class="product-submenu-text2">All Products</span></a>
+						</li>
+					</ul>
 				</div>
 				<!--分页导航栏end -->
-				<div class="col-sm-8 col-md-8 col-lg-8 product-list">
-					<!-- 所在位置 -->								
-						<div class="product-position">
-							<span class="position-text">所在位置 : </span><a href="#">首页</a> <span class="position-arrow">&rsaquo;</span> <a href="product.html">产品中心</a> <span class="position-arrow">&rsaquo;</span> <a href="#">室内乳胶漆系列</a>
-						</div>					
+				<div class="col-sm-8 col-md-8 col-lg-8">
+					<!-- 所在位置 -->
+					<div class="product-position">
+						<span class="position-text">所在位置 : </span>
+						<a href="index.html">首页</a> <span class="position-arrow">&rsaquo;</span>
+						<a href="product.html">产品中心</a> <span class="position-arrow">&rsaquo;</span>
+						<a href="#">室内乳胶漆系列</a>
+					</div>
 					<!-- 所在位置end -->
-	
-					<!-- 主体内容头部 -->				
-						<div class="product-main-top">
-							<h1>室内乳胶漆系列</h1>
-							<h3>PRODUCTS</h2>
+
+					<!-- 主体内容头部 -->
+					<div class="product-main-top">
+						<h1>室内乳胶漆系列</h1>
+						<h3>PRODUCTS</h2>
 						</div>					
 					
 					<!-- 主体内容头部end -->
 					<div class="row">
-						<div class="col-sm-4 col-md-4 col-lg-4 product-main-pic">
-							<a href="#" class="thumbnail"><img class="img-responsive" src="../images/e1.jpg" alt="..." /></a>
+						<div class="col-sm-6 col-md-6 col-lg-6">
+						    <div class="box">
+			                    <div class="tb-booth tb-pic tb-s310">
+			                       <a href="../images/01.jpg"><img src="../images/01_mid.jpg" alt="美女" rel="../images/01.jpg" class="jqzoom" /></a>
+			                    </div>
+			                    <ul class="tb-thumb" id="thumblist">
+				                   <li class="tb-selected"><div class="tb-pic tb-s40"><a href="#"><img src="../images/01_small.jpg" mid="../images/01_mid.jpg" big="../images/01.jpg"></a></div></li>
+				                   <li><div class="tb-pic tb-s40"><a href="#"><img src="../images/02_small.jpg" mid="../images/02_mid.jpg" big="../images/02.jpg"></a></div></li>
+				                   <li><div class="tb-pic tb-s40"><a href="#"><img src="../images/03_small.jpg" mid="../images/03_mid.jpg" big="../images/03.jpg"></a></div></li>
+				                   <li><div class="tb-pic tb-s40"><a href="#"><img src="../images/04_small.jpg" mid="../images/04_mid.jpg" big="../images/04.jpg"></a></div></li>
+				                   <li><div class="tb-pic tb-s40"><a href="#"><img src="../images/05_small.jpg" mid="../images/05_mid.jpg" big="../images/05.jpg"></a></div></li>
+			                    </ul>
+		                    </div>
 						</div>
-						<div class="col-sm-8 col-md-8 col-lg-8 product-main-information">
+						<div class="col-sm-6 col-md-6 col-lg-6">
 								<p class="product-details-text">产品名称: <span class="product-details-content">益盾外墙封闭底漆</span></p>
 								<p class="product-details-text">编号: <span class="product-details-content"></span>YDZS-1</p>
 								<p class="product-details-text">规格: <span class="product-details-content">18L</span></p>
 						</div>
-					</div>
-					<div class="row">
-						<h3 class="product-main-head">产品详情</h3>
-						<div class="product-main-content">儿童漆，创新融合立邦三大核心科技——净化甲醛+I级抗污+恒彩技术，不仅可以净化室内空气中的游离甲醛，且耐污渍性优于I级抗污标准，更能让墙面色彩持久缤纷靓丽，为您及孩子营造一个清新、洁净、缤纷的空间。 独有的立邦空气卫士技术，专利配方，使涂装后空气质量*通过严苛检测（A+标准*美国绿色卫士GREENGUARD金级认证），让您安心呼吸家的好空气。
-						</div>
-					</div>	
+                    </div>
+                    <script>
+                                  $(function () {
+                                      $('#myTab li:eq(0) a').tab('show');
+                                     });
+                    </script>
+                    <div class="product">
+                    	      <ul id="myTab" class="nav nav-tabs">
+                                 <li><a href="#home" data-toggle="tab">涂料参数</a></li>
+                                 <li class="active"><a href="#ios" data-toggle="tab">配套产品</a></li> 
+                              </ul>
+                              <div id="myTabContent" class="tab-content">
+                                   <div class="tab-pane fade in active" id="home">
+                                          <ul class="pg1">
+                                          	<li class="clearfix"><span>品名</span><p>钻石级/纳米灭菌内墙乳胶漆</p></li>
+                                          	<li class="clearfix"><span>适用范围</span><p>适用室外混凝土、外墙腻子、木质表面等<br>底料的封底</p></li>
+                                          	<li class="clearfix"><span>产品性能</span><p></p></li>
+                                          	<li class="clearfix"><span>体系状态</span><p></p></li>
+                                          	<li class="clearfix"><span>干燥时间</span><p></p></li>
+                                          	<li class="clearfix"><span>表干</span><p></p></li>
+                                          	<li class="clearfix"><span>理论用量</span><p></p></li>
+                                          	<li class="clearfix"><span>保质期</span><p></p></li>
+                                          	<li class="clearfix"><span>施工</span><p></p></li>
+                                          	<li class="clearfix"><span>规格</span><p></p></li>
+                                          	<li class="clearfix"><span>储存</span><p></p></li>
+                                          	<li class="clearfix"><span>执行标准</span><p></p></li>
+                                          </ul>
+                                   </div>
+                                   <div class="tab-pane fade" id="ios">
+                                           <div class="row">
+                                           	<div class="col-xs-6 col-md-4 assort-list">
+                                           		<h5></h5>
+                                           		<div class="img"><a href="#" class="item"><img/></a></div>
+                                           		<p></p>
+                                           	</div>
+                                           </div>
+                                   </div>
+                              </div>
+                              
+                    </div>
 				</div>
-			</div>		
+			</div>
 		</div>
+			
 		<!-- 产品介绍end -->
 
 		<!-- 联系方式  -->
@@ -142,10 +251,10 @@
 			<p>Copyright © 2017 益盾 .All Rights Reserved. 益盾公司 版权所有</p>
 		</div>
 		<!-- 底部end -->
-		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="../js/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="../js/index.js"></script>
-		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		
+		
+	
+
 	</body>
 
 </html>
