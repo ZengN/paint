@@ -85,8 +85,8 @@ span.brand-logo {
 /*公共联系方式部分*/
 .indicate {
     text-align: center;
-    background-color: #ED654B;/*rgb:237 101 75*/
-   	border-top: 1px solid #fff;
+    background-color: #604690;/*rgb:237 101 75*/
+   
     padding: 4em 0;
 }
 
@@ -494,7 +494,6 @@ span.glyphicon.glyphicon-send:hover {
 
 .product-submenu ul li a:visited {
 	color: #000;
-	
 }
 
 .product-submenu ul li a:hover {
@@ -614,3 +613,265 @@ span.glyphicon.glyphicon-send:hover {
 }
 
 
+/*--single--*/
+.single{
+   padding:2em 0;
+}
+.single h2{
+  text-align:center;
+  font-size: 2.8em;
+  font-family: 'Ubuntu-Italic';
+  text-transform: capitalize;
+  color: #ED654B;
+ }
+.single-section{
+	margin-top:1em;
+}
+.single-pic{
+	text-align:center;
+	margin-bottom:1em;
+}
+.single-section p {
+	color:#777;
+	line-height: 1.8em;
+	font-size: 1em;
+}
+.single-pic img {
+   width: 100%;
+}
+ul.blog-ic li{
+	display:inline-block;
+}
+ ul.blog-ic li span{
+	color:#000;
+	padding: 0.4em 0.8em 0.2em 0;
+	display:block;
+	font-size: 1.1em;
+}
+ ul.blog-ic li a  {
+	text-decoration:none;
+	color:#000;
+}
+ul.blog-ic {
+   margin: 1em 0;
+}
+ ul.blog-ic li span i{
+	font-size: 15px;
+  color: #ED654B;
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+.content-form{
+	margin-top:2em;
+}
+.content-form h3,.comments h3{ 
+	 font-size: 3em;
+    font-family: 'Ubuntu-Italic';
+    text-transform: capitalize;
+    color: #ED654B;
+	text-align: left;
+	margin-bottom: 0.5em;
+}
+.single-section h4 {
+    font-size: 1.5em;
+    color: #222;
+    margin: 1em 0;
+    font-family: 'Ubuntu-Italic';
+}
+.content-form form input[type="text"],.content-form form textarea{
+	padding: 10px 15px;
+	width: 60%;
+	color:#4E4F63;
+	font-size: 1em;
+	border: 1px solid #323352;
+	background:transparent;
+	outline: none;
+	font-family: 'Lato', sans-serif;
+	display: block;
+	margin:10px 0;
+}
+.content-form form textarea{
+	height:150px;
+	resize:none;
+}
+.content-form form input[type="submit"] {
+	background: #ED654B;
+	padding: 0.5em 1.3em;
+	border: none;
+	font-size: 1em;
+	margin-bottom: 1em;
+	color: #fff;
+	outline: none;
+	font-weight: 400;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.content-form form input[type="submit"]:hover{
+	background:#222;
+}
+.comments{
+	padding: 3em 0;
+}
+.comment-info {
+	margin-bottom:2em;
+}
+.comment-info h5 {
+	font-size: 1.3em;
+	color:#222;
+   text-transform: capitalize;
+}
+.comment-info p {
+	color:#777;
+	line-height: 1.8em;
+	font-size: 1em;
+	margin:0.5em 0;
+}
+.comment-info h6{
+	color:#222;
+	font-size:0.95em;
+	display:block;
+	margin-bottom:1em;
+}
+.comment-info a{
+	color:#000;
+	background:transparent;
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+	font-size: 0.85em;
+	display: inline-block;
+	border: 1px solid #323352;
+}
+.comment-info a:hover{
+	color: #fff;
+	 background: #ED654B;
+  	border: 1px solid#ED654B;
+}
+.comment-grid{
+	margin-bottom:2.5em;
+}
+
+
+#information{
+	background-color: #eee;
+	padding: 40px 0;
+}
+
+.info-content{
+	width: 700px;
+	background-color: #fff;
+	margin: 0 0 20px 0;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+.info-content h4{
+	color: #333;
+	padding: 2px 0 0 0;
+}
+.info-content p{
+	line-height: 1.6;
+}
+/*案例*/
+
+.blog-section {
+	padding: 4em 0;
+}
+.blog-section h2 {
+    font-size: 2.8em;
+    font-family: 'Ubuntu-Italic';
+    text-transform: capitalize;
+    color: #ED654B;
+    text-align: center;
+}
+.blog-grids {
+  margin-top: 3em;
+}
+.blog-grid {
+    padding: 0 0.5em 1.2em;
+    
+}
+.blog-grid h5 {
+  font-size: 0.95em;
+  color: #ED654B;
+  font-weight: 600;
+  margin-top: 1em;
+  text-transform: capitalize;
+}
+.blog-grid h4 {
+  font-size: 1.5em;
+  color: #222;
+  margin: 0.5em 0;
+ font-family: 'Ubuntu-Italic';
+}
+.blog-grid p {
+  font-size: 1em;
+  color: #777;
+  text-align: left;
+  line-height: 1.8em;
+  margin-bottom:1em;
+}
+
+a.button {
+  font-size: 1em;
+   text-transform: capitalize;
+}
+.blog-grid h4 a {
+    text-decoration: none;
+    color: #222;
+}
+a.mask {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+}
+img.zoom-img {
+  -webkit-transform: scale(1, 1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1, 1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
+}
+img.zoom-img:hover {
+  -webkit-transform: scale(1.1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 750ms;
+  -moz-transform: scale(1.1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 750ms;
+  overflow: hidden;
+}
+
+.tool-title {
+
+  padding-left: 15px;
+  border-left: 5px solid #053a88;
+  font-size: 36px;
+  font-weight: bold;
+  color: #053a88;
+  margin-bottom: 30px;
+}
+/*产品详情*/
+.pg1 li{padding:30px 0 20px 0;border-bottom: 1px dashed #bfbfbf;}
+  .pg1 li > span {
+    display: block;
+    float: left;
+    color: #266dd5;
+    font-size: 16px;
+    font-weight: bold;
+    width: 10%;
+    margin-right: 2%;
+    line-height: 25px;
+    text-align: left;
+  }
+.pg1 li>p{
+  float: left;
+  color: #7a7878;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  width: 88%;}
+.pg1 li>img{float: left;margin-right: 15px;}
+            
